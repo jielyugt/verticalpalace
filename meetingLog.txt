@@ -1,0 +1,11 @@
+09.25.2018
+
+A building with each floor colored by the colors of a rainbow (red, orange, yellow, green, blue, indigo and violet)
+
+Use an elevator to go up and down
+
+The viewer can rotate the view, but can't travel (since positions can't be tracked by devices like Google Cardboard)
+
+Each floor is distinguished by colors, patterns, and items (can be bizarre to create contrast and enhance memorization, yet to be tested)
+
+Use basic geometric shapes for early stage testing, to see if the idea of the "memory palace" works or not
