@@ -1,11 +1,10 @@
-<!-- Version 4.0 -->
+<!-- Version 5.0 -->
+
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
     <!-- <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script> -->
-    <script src='aframe-master.js'></script>
-    <script src='aframe-xr.js'></script>
-    <script src='vendor/animation-mixer.js'></script>
-  </head>
-
+    <script src="aframe-master.js"></script>
+    <script src="aframe-xr.js"></script>
+    <script src="vendor/animation-mixer.js"></script>
   <script>
   AFRAME.registerComponent('movement-listenerup1', {
         init: function () {
@@ -66,9 +65,11 @@
                 });
               }
           });
-    </script>
+    </script></head>
 
-  <body class="a-body ">
+  
+
+  <body class="a-body " style="width: 100%; height: 100%;"><div class="webxr-realities" style="position: absolute; width: 100%; height: 100%;"></div><div class="webxr-sessions" style="position: absolute; width: 100%; height: 100%;"></div><div class="webxr-realities" style="position: absolute; width: 100%; height: 100%;"></div><div class="webxr-sessions" style="position: absolute; width: 100%; height: 100%;"></div><div class="webxr-realities" style="position: absolute; width: 100%; height: 100%;"></div><div class="webxr-sessions" style="position: absolute; width: 100%; height: 100%;"></div>
     <a-scene>
 
     <a-assets>
@@ -88,8 +89,7 @@
 
       <a-sky color="#ECECEC" material="" geometry=""></a-sky>
 
-      <a-entity reticle geometry="primitive: ring; radiusInner: 0.04; radiusOuter: 0.05"
-      material="color: #aaaaaa"></a-entity>
+      
 
       <a-entity id="rig"
             movement-controls="constrainToNavMesh: true"
@@ -103,48 +103,16 @@
           </a-camera>
       </a-entity>
 
-      <a-entity
-          movement-listenerup1
-                geometry="primitive: plane; width: auto; height: auto"
-                material="color: #500000"
-                visible="true"
-                text="value: Go UP; width: 0.5; align: center; wrapCount: 5"
-                position="1 2.5 -1"
-                scale="1 1 1"
-                rotation="0 0 0">
+      <a-entity movement-listenerup1="" geometry="primitive:plane;width:0.5;height:0.16996047430830039" material="color:#500000" text="value:Go UP;width:0.5;align:center;wrapCount:5" position="1 2.5 -1">
       </a-entity>
 
-      <a-entity
-          movement-listenerup2
-                geometry="primitive: plane; width: auto; height: auto"
-                material="color: #500000"
-                visible="true"
-                text="value: Go UP; width: 0.5; align: center; wrapCount: 5"
-                position="1 8.5 -1"
-                scale="1 1 1"
-                rotation="0 0 0">
+      <a-entity movement-listenerup2="" geometry="primitive:plane;width:0.5;height:0.16996047430830039" material="color:#500000" text="value:Go UP;width:0.5;align:center;wrapCount:5" position="1 8.5 -1">
       </a-entity>
 
-      <a-entity
-          movement-listenerdown1
-                geometry="primitive: plane; width: auto; height: auto"
-                material="color: #500000"
-                visible="true"
-                text="value: Go DOWN; width: 0.5; align: center; wrapCount: 5"
-                position="1 7.5 -1"
-                scale="1 1 1"
-                rotation="0 0 0">
+      <a-entity movement-listenerdown1="" geometry="primitive:plane;width:0.5;height:0.33992094861660077" material="color:#500000" text="value:Go DOWN;width:0.5;align:center;wrapCount:5" position="1 7.5 -1">
       </a-entity>
 
-      <a-entity
-          movement-listenerdown2
-                geometry="primitive: plane; width: auto; height: auto"
-                material="color: #500000"
-                visible="true"
-                text="value: Go DOWN; width: 0.5; align: center; wrapCount: 5"
-                position="1 13.5 -1"
-                scale="1 1 1"
-                rotation="0 0 0">
+      <a-entity movement-listenerdown2="" geometry="primitive:plane;width:0.5;height:0.33992094861660077" material="color:#500000" text="value:Go DOWN;width:0.5;align:center;wrapCount:5" position="1 13.5 -1">
       </a-entity>
 
     </a-scene>
@@ -152,6 +120,9 @@
 
 
 <a href="blob:null/d43b8ea8-aece-4c51-bc1b-c32aadcbd5dd" download="users-jielyu-downloads-vr_memory-index-html" style="display: none;"></a>
+
+
+
 
 
 
