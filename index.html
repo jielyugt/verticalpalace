@@ -71,12 +71,19 @@
   <body class="a-body ">
     <a-scene>
 
+    <a-assets>
+  		<a-asset-item id="oneFloorHouse" src="thai-baan/scene.gltf">
+    </a-assets>
 
-  <a-gltf-model src="#cam" position="6.213886911039258 0 3.296272730146077" rotation="-0.7996561471284809 -0.8293061185535241 -1.1777264151479112" scale="0.8 0.8 0.8" gltf-model="cam/scene.gltf" id="camel"></a-gltf-model>
+    <a-entity id="diorama" position="0 0 0" scale="1 1 1" visible="true" shadow="cast: true">
+      <a-gltf-model src="#oneFloorHouse"></a-gltf-model>
+    </a-entity>
+
+  <!-- <a-gltf-model src="#cam" position="6.213886911039258 0 3.296272730146077" rotation="-0.7996561471284809 -0.8293061185535241 -1.1777264151479112" scale="0.8 0.8 0.8" gltf-model="cam/scene.gltf" id="camel"></a-gltf-model>
   <a-gltf-model src="#fish" gltf-model="fish/scene.gltf" position="-2.3566430399376634 1.7859016676951747 -4.0658969632604816" rotation="0 48.75570348976577 0" scale="0.5 0.5 0.5" id="fish"></a-gltf-model>
 
       <a-entity id="floor 1"><a-plane rotation="-90 0 0" width="4" height="4" color="#7BC8A4" scale="4 1.5 0.2" material="color:#ee4230" geometry="primitive:box" position="0 0 5"></a-plane><a-plane rotation="-90 90 0" width="4" height="4" color="#7BC8A4" scale="4 1.5 0.2" material="color:#ee4230" geometry="primitive:box" position="5 0 0"></a-plane><a-plane rotation="-90 90 0" width="4" height="4" color="#7BC8A4" scale="4 1.5 0.2" material="color:#ee4230" geometry="primitive:box" position="-5 0 0"></a-plane><a-plane rotation="-90 0 0" width="4" height="4" color="#7BC8A4" scale="4 1.5 0.2" material="color:#ee4230" geometry="primitive:box" position="0 0 -5"></a-plane></a-entity><a-entity id="bubble"><a-plane rotation="-90 0 0" width="4" height="4" color="#7BC8A4" scale="0.1 0.1 0.1" material="color:#ee4230;emissive:#ff2f92" geometry="primitive:sphere" position="-1.0560031728360564 2.1848095168081594 -2.442594885673866"></a-plane><a-plane rotation="-90 90 0" width="4" height="4" color="#7BC8A4" scale="0.15 0.15 0.15" material="color:#ee4230;emissive:#0432ff;emissiveIntensity:1.2" geometry="primitive:sphere" position="-1.4147654516433357 2.4956818379621604 -2.281434469514365"></a-plane><a-plane rotation="-90 90 0" width="4" height="4" color="#7BC8A4" scale="0.2 0.2 0.2" material="color:#ee4230;emissiveIntensity:1.3;emissive:#ff2600" geometry="primitive:sphere" position="-0.9781491502185771 3.2036192784444935 -2.276437013620476"></a-plane></a-entity><a-entity position="0 12 0" id="floor 3"><a-plane rotation="-90 0 0" width="4" height="4" color="#7BC8A4" scale="4 1.5 0.2" material="" geometry="primitive:box" position="0 0 5"></a-plane><a-plane rotation="-90 90 0" width="4" height="4" color="#7BC8A4" scale="4 1.5 0.2" material="" geometry="primitive:box" position="5 0 0"></a-plane><a-plane rotation="-90 90 0" width="4" height="4" color="#7BC8A4" scale="4 1.5 0.2" material="" geometry="primitive:box" position="-5 0 0"></a-plane><a-plane rotation="-90 0 0" width="4" height="4" color="#7BC8A4" scale="4 1.5 0.2" material="" geometry="primitive:box" position="0 0 -5"></a-plane></a-entity><a-entity position="0 6 0" id="floor 2"><a-plane rotation="-90 0 0" width="4" height="4" color="#7BC8A4" scale="4 1.5 0.2" material="color:#fef300" geometry="primitive:box" position="0 0 -5"></a-plane><a-plane rotation="-90 90 0" width="4" height="4" color="#7BC8A4" scale="4 1.5 0.2" material="color:#fef300" geometry="primitive:box" position="-5 0 0"></a-plane><a-plane rotation="-90 90 0" width="4" height="4" color="#7BC8A4" scale="4 1.5 0.2" material="color:#fef300" geometry="primitive:box" position="5 0 0"></a-plane><a-plane rotation="-90 0 0" width="4" height="4" color="#7BC8A4" scale="4 1.5 0.2" material="color:#fef300" geometry="primitive:box" position="0 0 5"></a-plane></a-entity><a-entity position="0 6 0" id="walls"><a-plane rotation="0 90 -90" width="4" height="4" color="#7BC8A4" scale="4 4 0.2" material="color:#b1e4ef" geometry="primitive:box" position="8 2 0"></a-plane><a-plane rotation="0 180 -90" width="4" height="4" color="#7BC8A4" scale="4 4 0.2" material="color:#b1e4ef" geometry="primitive:box" position="0 2 -8"></a-plane><a-plane rotation="0 90 -90" width="4" height="4" color="#7BC8A4" scale="4 4 0.2" material="color:#b1e4ef" geometry="primitive:box" position="-8 2 0"></a-plane><a-plane rotation="2.782985346280577e-15 0 -90" width="4" height="4" color="#7BC8A4" scale="4 4 0.2" material="color:#b1e4ef" geometry="primitive:box" position="0 2 8"></a-plane></a-entity>
-
+ -->
 
 
       <a-sky color="#ECECEC" material="" geometry=""></a-sky>
@@ -84,13 +91,17 @@
       <a-entity reticle geometry="primitive: ring; radiusInner: 0.04; radiusOuter: 0.05"
       material="color: #aaaaaa"></a-entity>
 
-      <a-camera look-controls position="0 1.6 2">
-          <a-entity cursor="fuse: false"
-                position="0 0 -0.025"
-                geometry="primitive: ring; radiusInner: 0.0005; radiusOuter: 0.00075"
-                material="color: black; shader: flat">
-          </a-entity>
-      </a-camera>
+      <a-entity id="rig"
+            movement-controls="constrainToNavMesh: true"
+            position="50 0 10">
+          <a-camera look-controls position="0 10 0">
+              <a-entity cursor="fuse: false"
+                    position="0 0 -0.025"
+                    geometry="primitive: ring; radiusInner: 0.0005; radiusOuter: 0.00075"
+                    material="color: black; shader: flat">
+              </a-entity>
+          </a-camera>
+      </a-entity>
 
       <a-entity
           movement-listenerup1
